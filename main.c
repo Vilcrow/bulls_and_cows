@@ -20,8 +20,14 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <locale.h>
+#include <libintl.h>
 
-#define _(STR) (STR)
+#define LOCALEBASEDIR "/usr/share/locale/"
+#define TEXTDOMAIN "bulls_and_cows"
+
+#define _(STR) gettext(STR)
+#define N_(STR) (STR)
 
 enum {key_escape = 'q'};
 enum {num_of_digits = 4};
@@ -44,6 +50,10 @@ int main()
 	unsigned char bulls = 0, cows = 0;
 	int c;
 	int attempt = 1;
+	setlocale(LC_CTYPE, "");
+	setlocale(LC_MESSAGES, "");
+	bindtextdomain(TEXTDOMAIN, LOCALEBASEDIR);
+	textdomain(TEXTDOMAIN);
 	show_help();
 	srand(time(NULL));	
 	create_num(hidden_num);
