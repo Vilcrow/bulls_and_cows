@@ -158,3 +158,4 @@ void show_help()
 	printf(_("Enter '%c' to quit the game.\n"), key_escape);
 	printf(_("The number is hidden. Enter your answer:\n"));
 }
+
