@@ -1,15 +1,15 @@
 # gettext/ru.po
 # Russian translation for the bulls_and_cows game
-# Copyright (C) 2022 S.V.I. 'Vilcrow'
+# Copyright (C) 2022-2023 S.V.I. 'Vilcrow'
 # This file is distributed under the same license as the bulls_and_cows package.
-# S.V.I. Vilcrow, 2022.
+# S.V.I. Vilcrow, 2022-2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: bulls_and_cows 1.0\n"
-"Report-Msgid-Bugs-To: Vilcrow\n"
-"POT-Creation-Date: 2022-01-02 18:40+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-12 07:58+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: S.V.I. Vilcrow\n"
 "Language: ru\n"
@@ -17,57 +17,57 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.c:78
+#: main.c:81
 #, c-format
 msgid "Incorrect input!\n"
 msgstr "Неверный ввод!\n"
 
-#: main.c:85
+#: main.c:87
 #, c-format
 msgid "\t%d[Bulls] %d[Cows]\n"
 msgstr "\t%d[Быки] %d[Коровы]\n"
 
-#: main.c:87
+#: main.c:89
 #, c-format
-msgid "You win. Total attempts - %d.\n"
-msgstr "Вы победили. Количество попыток - %d.\n"
+msgid "You win! Total attempts - %d.\n"
+msgstr "Вы победили! Количество попыток - %d.\n"
 
-#: main.c:96
+#: main.c:98
 #, c-format
 msgid "Reapiting digits!\n"
 msgstr "Повторяющиеся цифры!\n"
 
-#: main.c:101
+#: main.c:104
 #, c-format
 msgid "Too many attempts.\n"
 msgstr "Слишком много попыток.\n"
 
-#: main.c:153
+#: main.c:160
 #, c-format
 msgid "The computer has generated a sequence of four non-repeating\n"
 msgstr "Компьютер сгенерировал последовательность из четырех неповторяющихся\n"
 
-#: main.c:154
+#: main.c:161
 #, c-format
 msgid "digits from 0 to 9. Your goal is to guess these digits.\n"
 msgstr "цифр от 0 до 9. Ваша задача отгадать эти цифры.\n"
 
-#: main.c:155
+#: main.c:162
 #, c-format
 msgid "If the matching digits are in their right positions, they are\n"
 msgstr "Если угаданные цифры на верных позициях, то это\n"
 
-#: main.c:156
+#: main.c:163
 #, c-format
 msgid "'bulls', if in different positions, they are 'cows'.\n"
 msgstr "'быки', если на других позициях - 'коровы'.\n"
 
-#: main.c:158
+#: main.c:165
 #, c-format
-msgid "Enter '%c' to quit the game.\n"
-msgstr "Введите '%c', чтобы закрыть игру.\n"
+msgid "Enter '%c' or use Ctrl-D(i.e. EOF) to quit the game.\n"
+msgstr "Введите '%c' или используйте Ctrl-D(т.е. EOF), чтобы закрыть игру.\n"
 
-#: main.c:159
+#: main.c:167
 #, c-format
 msgid "The number is hidden. Enter your answer:\n"
 msgstr "Число загадано. Введите Ваш ответ:\n"
